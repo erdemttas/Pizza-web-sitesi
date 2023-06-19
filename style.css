@@ -57,6 +57,7 @@ a{
     border-radius: 3rem;
     margin-top: 1rem;
     font-size: 1.7rem;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -294,7 +295,194 @@ section{
         font-size: 1.5rem;
         color: var(--main-color);
     }
-
-    
 /*! products end */
+
+
+/*! about start */
+    .about .row{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+    }
+
+    .about .row .image{
+        flex: 1 1 45rem;
+    }
+    .about .row .image img{
+        width: 100%;
+    }
+
+    .about .row .content{
+        flex: 1 1 45rem;
+    }
+
+    .about .row .content h3{
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    .about .row .content p{
+        font-size: 1.6rem;
+        color: #ccc;
+        padding: 1rem 0;
+        line-height: 2rem;
+    }
+/*! about end */
+
+/*! review start */
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    background-color: #fff;
+    text-align: center;
+    border-radius: 3.5rem;
+    padding: 3rem 2rem;
+}
+
+.review .box-container .box p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box h3{
+    font-size: 2rem;
+    color: var(--main-color);
+    padding: 1rem 0;
+}
+
+.review .box-container .box .stars i{
+    font-size: 1.5rem;
+    color: gold;
+}
+/*! review end */
+
+
+
+/*! contact us start */
+    .contact .row{
+        display: flex;
+        background-color: #000;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .contact .map{
+        flex: 1 1 45rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    .contact form{
+        flex: 1 1 45rem;
+        width: 100%;
+        text-align: center;
+        padding: 5rem 2rem;
+    }
+   
+    .contact h3{
+        font-size: 3.5rem;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .contact .row form .inputBox{
+        display: flex;
+        margin: 2rem 0;
+        align-items: center;
+    }
+
+    .contact .row form .inputBox i{
+         color: #fff;
+         font-size: 2rem ;
+         padding-left: 2rem;
+    }
+
+    .contact .row form .inputBox input{
+        width: 100%;
+        padding: 2rem;
+        font-size: 1.7rem;
+        color: #fff;
+        text-transform: none;
+        background-color: transparent;
+    }
+
+    .contact .row form .btn{
+        color: var(--main-color);
+        background-color: #fff;
+    }
+/*! contact us end */
+    
+    
+
+/*! blog start */
+    .blog .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+        gap: 1rem;
+    }
+
+    .blog .box-container .box{
+        background-color: #fff;
+        border-radius: 3rem;
+    }
+
+    .blog .box-container .box .image{
+        height: 30rem;
+        overflow: hidden;
+        width: 100%;
+        border-top-right-radius: 3rem;
+        border-top-left-radius: 3rem;
+    }
+
+    .blog .box-container .box .image img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .blog .box-container .box:hover .image img{
+        transform: scale(1.2);
+    }
+
+    .blog .box-container .box .content .title{
+        font-size: 2rem;
+        line-height: 1.7;
+    }
+
+    .blog .box-container .box .content{
+        padding: 2rem;
+    }
+
+    .blog .box-container .box .content .title{
+        font-size: 2rem;
+        line-height: 1.7;
+    }
+
+    .blog .box-container .box .content span{
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .blog .box-container .box .content p{
+        font-size: 1.6rem;
+        line-height: 1.8;
+        padding: 1rem 0;
+        color: #ccc;
+    }
+
+/*! blog end */
+
+
+
 
