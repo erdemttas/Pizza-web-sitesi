@@ -68,6 +68,15 @@ section{
     padding: 3.5rem 7%;
 }
 
+.search-input{
+    color: var(--black-color);
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    text-transform: none;
+    padding: 1rem 2rem;
+
+}
+
  .heading{
     text-transform: uppercase;
     color: #fff;
@@ -83,6 +92,37 @@ section{
 
 
 /*! header start */
+.header .search-form{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    display: flex;
+    align-items: center;
+    width: 50rem;
+    height: 5rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scaleY(0);
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+
+.header .search-form i{
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+
+
+.header .search-form .search-input{
+    width: 100%;
+}
+
+
 .header{
     background-color: #fff;
     display: flex;
@@ -118,6 +158,69 @@ section{
     font-size: 2.5rem;
     margin-left: 2rem;
     background-color: transparent;
+}
+
+.card-items-container{
+    position: absolute;
+    top: 95%;
+    width: 35rem;
+    background-color: #fff;
+    height: calc(100vh - 9rem);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    right: 7rem;
+    right: -100%;
+}
+
+.card-items-container.active{
+    right: 3rem;
+}
+
+.card-items-container .card-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    color: var(--black-color);
+}
+
+
+.card-items-container .card-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-items-container .card-item .fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    
+}
+
+.card-items-container .card-item img{
+    height: 7rem;
+}
+
+.card-items-container .card-item .content h3{
+    font-size: 2rem;
+    color: var(--black-color);
+    padding-bottom: .5rem;
+}
+
+.card-items-container .card-item .content .price{
+    font-size: 1.5rem;
+    color: var(--black-color);
+}
+
+.card-items-container .btn{
+    width: 100%;
+    text-align: center;
+    border-radius: unset;
+}
+
+
+#menu-btn{
+    display: none;
 }
 /*! header end */
 
@@ -483,6 +586,122 @@ section{
 
 /*! blog end */
 
+
+/*! footer start */
+    .footer{
+        background-color: var(--black-color);
+        text-align: center;
+    }
+
+    .footer .search .search-input{
+        width: 30rem;
+    }
+
+    .footer .search .btn-primary{
+        background-color: var(--main-color);
+        padding: 1rem 2rem;
+        margin-left: 1rem;
+    }
+
+    .footer .share{
+        padding: 2rem 1rem;
+    }
+
+    .footer .share a{
+        color: #fff;
+        width: 5rem;
+        height: 5rem;
+        font-size: 4rem;
+        margin: 0.3rem;
+        line-height: 1.8;
+        margin: 0 2rem;
+    }
+
+    .footer .links{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .footer .links a{
+        background-color: var(--main-color);
+        padding: 0.7rem 2rem;
+        font-size: 2rem;
+        color: #fff;
+        border-radius: 3rem;
+    }
+
+    .footer .links a:hover{
+        background-color: var(--black-color);
+        opacity: .7;
+    }
+
+    .footer .credit{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 2rem;
+    }
+
+    .footer .credit span{
+        color: #e84242;
+    }
+/*! footer end */
+
+
+
+/*! responsive start */
+    @media (max-width: 991px){
+       html{
+        font-size: 55%;
+       }
+
+       .header{
+        padding: 1.5rem 2rem;
+       }
+
+       .header .logo img{
+        height: 7rem;
+       }
+
+       section{
+        padding: 2rem;
+       }
+
+       .products .box-container .box .box-head .name{
+        font-size: 3rem;
+       }
+    }
+
+    @media (max-width: 768px){
+        #menu-btn{
+            display: inline-block;
+        }
+
+        .header .navbar{
+            position: absolute;
+            top: 95%;
+            width: 30rem;
+            background-color: #fff;
+            height: calc(100vh - 10rem);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            right: -100%;
+        }
+
+        .header .navbar.active{
+            right: 3rem;
+        }
+
+        .header .navbar a{
+            color: var(--black-color);
+            display: block;
+            margin: 1.5rem;
+            padding: .5rem;
+            font-size: 2rem;
+        }
+    }
+/*! responsive end */
 
 
 
